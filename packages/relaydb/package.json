@@ -1,0 +1,39 @@
+{
+  "name": "relaydb",
+  "version": "0.0.1",
+  "description": "Offline database with realtime sync",
+  "license": "MIT",
+  "keywords": [
+    "db",
+    "typescript",
+    "db",
+    "sync",
+    "crdt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilyupo/relaydb.git",
+    "directory": "packages/relaydb"
+  },
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "exports": {
+    ".": "./build/src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "deploy": "cp ../../README.md ./ && npm run build && node ../../deploy.js && rm ./README.md",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "ts-pattern": "^5.2.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "concat",
+    "Dima",
+    "firestore",
+    "mergeable",
+    "modificators",
+    "nosql",
+    "relaydb",
+    "seedrandom",
+    "Subquery",
+    "timestamptz",
+    "timetz",
+    "unmangle",
+    "unselection"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "relaydb-monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:watch": "conc \"npm run build:watch --workspace=relaydb\" \"npm run build:watch --workspace=relaydb-testsuite\"",
+    "bootstrap": "npm install && npm install --workspaces && npm run build",
+    "deploy": "npm run deploy --workspaces",
+    "test": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "gts": "^5.2.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "tsx": "^4.15.6",
+    "typescript": "~5.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "semver": "^7.6.3"
+  }
+}
