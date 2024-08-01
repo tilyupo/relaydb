@@ -1,7 +1,7 @@
 {
-  "name": "relaydb",
+  "name": "relaydb-server",
   "version": "0.0.1",
-  "description": "Offline database with realtime sync",
+  "description": "RelayDB server implementation in pure TypeScript",
   "license": "MIT",
   "keywords": [
     "offline",
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tilyupo/relaydb.git",
-    "directory": "packages/relaydb-server"
+    "directory": "packages/relaydb"
   },
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -27,7 +27,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
-    "deploy": "npm run build && node ../../deploy.js",
+    "deploy": "cp ../../README.md ./ && npm run build && node ../../deploy.js && rm ./README.md",
     "test": "vitest run"
   },
   "devDependencies": {
