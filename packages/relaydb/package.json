@@ -4,7 +4,7 @@
   "description": "Offline database with realtime sync",
   "license": "MIT",
   "keywords": [
-    "db",
+    "offline",
     "typescript",
     "db",
     "sync",
